@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Table Example</title>
+ <style>
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ }
+ th, td {
+ padding: 10px;
+ border: 1px solid black;
+ }
+ tr:nth-child(even) {
+ background-color: red;
+ }
+ </style>
+</head>
+<body>
+ <table id="myTable">
+ <thead>
+ <tr>
+ <th>S.N.</th>
+ <th>Name</th>
+ <th>Image</th>
+ </tr>
+ </thead>
+ <tbody id="tableBody">
+ </tbody>
+ </table>
+ <script>
+ document.addEventListener('DOMContentLoaded', function () {
+ const tableBody = document.getElementById('tableBody');
+ const data = [
+ {sn: 1, name: 'Kanchana', image: 'kanchana.jpg'},
+ {sn: 2, name: 'Aashika', image: 'aashika.jpg'},
+ {sn: 3, name: 'Nikita', image: 'Nikita.jpg'},
+ {sn: 4, name: 'Sange', image: 'Sange.jpg'},
+ ];
+ data.forEach(item => {
+ const row = document.createElement('tr');
+ row.innerHTML = `
+ <td>${item.sn}</td>
+ <td>${item.name}</td>
+ <td>${item.image}</td>
+ `;
+ tableBody.appendChild(row);
+ });
+});
+ </script>
+</body>
+</html>

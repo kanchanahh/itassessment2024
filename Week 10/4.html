@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Day Switch Case</title>
+ <script>
+ function daySwitch(){
+ var DayNumber = parseInt(prompt("Enter a number between 1 to 7: "));
+ var day;
+ switch(DayNumber){
+ case 1:
+ day = "sunday";
+ break;
+ case 2:
+ day = "Monday";
+ break;
+ case 3:
+ day = "Tuesday";
+ break;
+ case 4:
+ day = "Wednesday";
+ break;
+ case 5:
+ day = "Thursday";
+ break;
+ case 6:
+ day = "Friday";
+ break;
+ case 7:
+ day = "Saturday";
+ break;
+ }
+ alert("the day is: " +day);
+ }
+ </script>
+</head>
+<body>
+ <h2> Day Switch Case </h2>
+ <button onclick="daySwitch()"> Day Switch Case </button>
+</body>
+</html>

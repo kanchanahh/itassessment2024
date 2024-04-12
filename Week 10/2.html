@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Input data</title>
+<script>
+ function inputData() {
+ var name = prompt("Enter Your Name:");
+ var id = prompt("Enter Your Student ID:");
+ if (name !== null && id !== null) {
+ 
+ alert("Name: " + name + "\nStudent ID: " + id);
+ } else {
+ alert("Input canceled. Please provide your name and student ID.");
+ }
+ }
+</script>
+</head>
+<body>
+<button onclick="inputData()">Input Data</button>
+</body>
+</html>

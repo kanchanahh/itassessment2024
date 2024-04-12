@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Image Display</title>
+</head>
+<body>
+ <h2>Images</h2>
+ <div id="imageList"></div>
+ <script>
+ var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+ var container = document.getElementById('imageList');
+ for (var i = 0; i < images.length; i++) {
+ var img = document.createElement('img');
+ img.src = images[i];
+ container.appendChild(img);
+}
+ </script>
+</body>
+</html>
